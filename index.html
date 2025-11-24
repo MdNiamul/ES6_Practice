@@ -3,11 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dom</title>
+    <link rel="stylesheet" href="styles/styless.css">
 </head>
 <body>
-    <h1>Hi Fuck you more </h1>
+   <h1>Dom doma dom</h1>
+   <button onclick="console.log(7)">Clik Me </button>
+   <button onclick="console.log(63)">another button</button>
+   <input type="text">
+   <br>
+   <button onclick="makeYellow()">Make Yellow</button>
+   <button onclick="makeRed()">Make makeRed</button>
+   <button id="btn-make-blue">make blue </button>
+   <button id="make-green"> Green</button>
+   <button id="black-purple">purple</button>
+   <button id="make-orange">make-orange</button>
+   <button class="make-black">Make-Blue</button>
+   <script>
+    function makeYellow(){
+        document.body.style.backgroundColor = 'yellow';
+    }
+    function makeRed(){
+        document.body.style.backgroundColor = 'red';
+    }
 
-    <script src="Script/main.js"></script>
+    const btnmakeblue = document.getElementById('btn-make-blue');
+    btnmakeblue.onclick = function makeblue(){
+        document.body.style.backgroundColor = 'blue';
+    }
+
+    document.getElementById('make-green').addEventListener('click', function makegreen(){
+        document.body.style.backgroundColor = 'green';
+
+    });
+
+    document.getElementById('black-purple').addEventListener('click', function blackpurple(){
+        document.body.style.backgroundColor = 'purple';
+    });
+
+    document.getElementById('make-orange').addEventListener('click', function makeOrange(){
+        document.body.style.backgroundColor = 'red';
+    });
+
+   </script>
+   <script src="dom.js"></script>
 </body>
 </html>
